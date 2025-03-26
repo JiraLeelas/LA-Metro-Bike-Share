@@ -55,19 +55,23 @@ The project is separated into two main sections: data extraction, transformation
 
 ![Top 10 Percentile Routes](./assets/maps/top10routes.png)
 
+* Scatter plot of Year-over-year changes revealed majority of the stations have declined YoY growth in 2023-2024 compared to 2022-2023, with the majority of the high volume stations have growth slowed down. This suggested that these stations might reach its regular customer base capacity. 
+
+![Start Station Year-over-Year Changes](./assets/maps/StartStationYoYchange.png)
+
 ## Key Takaways
 - **Customer Behaviour**: As majority of the trips occur between 7:00 and 21:00, the operator could utilized the lower usage period for routine bike maintainance.
 - **Potential Services**: Given the median ride duration is 15 minutes, while the pricing is offered at a fixed 30-minute ride. There might be an opportunity to introduce packages for riders to align with the actual usage pattern.
+- **YoY Station Usage Growth**:  With our YoY data indicates that the majority of the stations have declined growth compared to previous year, a follow-up study should be conducted to evaluate wheter theses stations have reach its regular customer base capacity.
 - **Potential Service Area Exapansion**: With the high volume of trips in the Westside suggested a strong demand. Conducting a feasibility study to expand additional bike stations within the area could improve a better support for the demands.
-
-
 
 ## Limitations and Futurework
 * As this dataset is anonymized, certain values such as passholder type would contain duplicate entries and are not representative of the actual number of passholders. Thus, any decisions made using this data should take this into consideration.
 * This project operated under the assumption that the most recently uploaded station dataset is the most accurate. Thus, certain trips were excluded due to mismatched in station id. Future research should explore this inconsistency within the data.
-* Although we tackled the graphica limitation of the Power BI limited graph functionality access with Folium. The current scope of exporation is limited to the present data. Future work should icorporate demographic data to provide more comprehensive analysis on the possiblity of expanding this service.
+* Although we tackled the geographical visualization limitation of the Power BI by utilizing Folium. The current scope of exploration is limited to the present data. Future work should icorporate demographic data to provide more comprehensive analysis on the possiblity of expanding this service.
 
 
 ## References
 * Discover Los Angeles (2024). The Guide to Driving in Los Angeles | Discover Los Angeles. [online] www.discoverlosangeles.com. Available at: https://www.discoverlosangeles.com/travel/the-guide-to-driving-in-los-angeles [Accessed 22 Mar. 2025].
 * Metro Bike Share (2016). Data. [online] Metro Bike Share. Available at: https://bikeshare.metro.net/about/data/ [Accessed 22 Mar. 2025].
+ 
