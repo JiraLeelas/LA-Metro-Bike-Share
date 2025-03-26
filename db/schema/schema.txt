@@ -1,0 +1,44 @@
+DBML: https://dbdiagram.io/home
+
+Table stations {
+  station_id integer [primary key]
+  name varchar(512)
+  live_date timestamp
+  region varchar(512)
+  status enum
+  latitude decimal
+  longitude decimal
+}
+
+Table bike {
+  bike_id integer [primary key]
+  type enum
+}
+
+Table trips {
+  trip_id integer [primary key]
+  bike_id integer
+  start_station integer
+  end_station integer
+  start_time timestamp
+  end_time timestamp
+  duration integer
+  plan_duration integer
+  trip_route_category varchar(256)
+  passholder_type enum
+}
+
+Table load_history {
+  id integer [primary key]
+  file_name varchar(256)
+  load_stamp timestamp
+  row_count integer
+  load_status enum
+}
+
+
+Ref: "stations"."station_id" < "trips"."start_station"
+
+Ref: "stations"."station_id" < "trips"."end_station"
+
+Ref: "bike"."bike_id" < "trips"."bike_id"
